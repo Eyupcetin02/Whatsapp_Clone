@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    display: flex;
+}
+
+
+.menu-icone{
+    display: none;
+}
+
+
+
+
+@media(max-width: 750px){
+    .menu-icone{
+   
+        position: absolute;
+        display: inline-block;
+        font-size: 35px;
+        margin-left: 5px;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+
+    }
+}

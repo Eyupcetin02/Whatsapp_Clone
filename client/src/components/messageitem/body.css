@@ -1,0 +1,153 @@
+.bodycontainer {
+    background-color: rgb(92, 136, 75);
+    width: 70%;
+    height: 100vh;
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    overflow-y: auto;
+}
+
+.input {
+    width: 100%;
+    height: 55px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+
+.input input {
+    height: 30px;
+    width: 75%;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.message-container{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+}
+
+.truemessageBox {
+    background-color: #97eb66;
+    width: 25%;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-left: auto; 
+}
+
+.falsemessageBox {
+    background-color: #ccc;
+    width: 25%;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-right: auto; 
+}
+
+.messageSpan {
+    font-family: sans-serif;
+    word-wrap: break-word;
+}
+
+.dateSpan {
+    font-size: x-small;
+    position: absolute;
+    margin-right: 5px;
+    bottom: 0;
+    right: 0;
+}
+
+
+.iconeButton{
+    margin-left: 10px;
+    background-color: rgb(92, 136, 75);
+    border-radius: 50%;
+    width: 45px;
+    height: 30px;
+    border: none;
+    
+}
+
+
+
+@media(max-width: 750px){
+
+    
+.bodycontainer{
+    width: 100%;
+}
+
+.falsemessageBox:first-child{
+    margin-top: 35px ;
+}
+
+
+
+
+
+}
+
+
+
+
+
+/*nav*/
+
+
+.message-body-navbar{
+    background-color: #ccc;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.message-body-lefside{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.message-body-lefside p {
+    font-size: small;
+    margin-top: 25px;
+}
+
+
+.mesage-body-profile-photo{
+    font-size: 35px;
+}
+
+
+.message-body-rightside{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    font-size: x-large;
+    color: black;
+    position: absolute;
+    right: 0;
+}

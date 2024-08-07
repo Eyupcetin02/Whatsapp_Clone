@@ -1,0 +1,99 @@
+.authContainer{
+    width: 100%;
+    background-image: url(../images/authimage.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.authChildContainer{
+    display: flex;
+    width: 30%;
+    height: 45%;
+    padding: 3px;
+    flex-direction: column;
+}
+
+.span:hover{
+color: rgb(21, 21, 221);
+}
+
+.span{
+    color: royalblue;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+.authChildContainer input{
+    padding: 5px;
+    height: 20%;
+    margin-bottom: 3px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(55, 122, 223);
+    color: white;
+    height: 15%;
+}
+
+.buttonDiv:hover{
+    background-color: rgb(44, 44, 228);
+    transition: background-color 0.3s ease;
+
+}
+
+
+
+
+
+
+/*file input*/
+
+
+
+
+.file-input-container {
+    display: inline-block;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+}
+
+.file-input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: royalblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-input-label:hover {
+    background-color: rgb(21, 21, 221);
+}

@@ -1,0 +1,138 @@
+.usercontainer{
+    width: 30%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+
+
+.users{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: 1px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.users:hover{
+    background-color: #ccc;
+}
+
+.usermail{
+    position: absolute;
+    margin-right: 5px;
+    bottom: 0;
+    right: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.authInput{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.authInput input{
+    width: 90%;
+    outline: none;
+    background: #ccc;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    
+}
+
+
+
+.options {
+    position: absolute;
+    right: 1;
+    top: 5;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 8px;
+    z-index: 999; 
+}
+
+.list-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.list-ul li{
+    background-color: #ccc;
+    padding: 9px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.profile-icone{
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: large;
+}
+
+
+.list-ul li:hover{
+    background-color: #857b7b;
+}
+
+.options option{
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+.options:hover{
+    background-color: #f0f0f0;
+}
+
+
+
+.userinfo{
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    position: relative;
+
+}
+
+
+.profile-photo{
+    color: rgb(204, 198, 186);
+}
+
+
+@media(max-width: 750px){
+
+    
+.usercontainer , .usermail ,.authInput{
+    display: none;
+}
+
+.usercontainer:nth-child(2){
+    margin-top: 35px;
+}
+
+
+
+}
