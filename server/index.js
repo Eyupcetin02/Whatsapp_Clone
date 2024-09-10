@@ -98,7 +98,7 @@ app.post("/api/register" ,  upload.single('profileImage') , register)
 
 
 
-const MONGO_URI = "mongodb+srv://eyupCetin:12345@eyupcetin.j24djvy.mongodb.net/question-answer?retryWrites=true&w=majority"
+const MONGO_URI = "mongo_uri"
 mongoose.connect(MONGO_URI)
 .then(()=>{
     server.listen(5000 , ()=>{
